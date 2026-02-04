@@ -1,0 +1,18 @@
+ORG 0000H
+
+
+CLR A              ; A = 00H
+ORL A, #10H        ; Set '1'
+ORL A, #40H        ; Set '5'
+ANL A, #0F0H       ; Mask ? A = 50H
+
+MOV B, A           
+
+CLR A              ; A = 00H
+ORL A, #07H        ; Set '7'
+ORL A, #50H        ; Set '5'
+ANL A, #0FFH       ; A = 57H
+
+XCH A, B           
+
+END
