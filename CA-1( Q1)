@@ -1,8 +1,3 @@
-0000| MOV A, #12     
-0002| MOV B, #100     
-0005| MUL AB          
-       
-0006| MOV R0, A       
-       
-0007| MOV A, #11      
-0009| ADD A, R0      
+MOV A, #185
+MOV B, #25
+MUL AB
